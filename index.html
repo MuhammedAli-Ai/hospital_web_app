@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthyCare Hospital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hide mobile dropdown by default */
+    #mobileDropdown {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out;
+    }
+
+    /* Show menu when "open" class is added */
+    #mobileDropdown.open {
+      max-height: 400px; /* Enough height for links */
+    }
+
+    /* Hide desktop nav on small screens */
+    @media (max-width: 768px) {
+      #desktopMenu { display: none; }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-white min-h-screen text-gray-800 font-[Poppins]">
+
+  <!-- Header -->
+  <header class="backdrop-blur-md bg-white/30 shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/index.html" class="text-2xl font-semibold text-green-600">🏥 HealthCare+</a>
+
+      <!-- Desktop Navigation -->
+      <nav id="desktopMenu" class="space-x-6 text-green-700">
+        <a href="/index.html" class="hover:text-green-500 transition">Home</a>
+        <a href="/about/index.html" class="hover:text-green-500 transition">About</a>
+        <a href="/doctors/index.html" class="hover:text-green-500 transition">Doctors</a>
+        <a href="/contact/index.html" class="hover:text-green-500 transition">Contact</a>
+        <a href="/login/index.html" class="hover:text-green-500 transition font-semibold">Login</a>
+        <a href="/signup/index.html" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full transition">Sign Up</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="text-green-600 text-3xl md:hidden focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileDropdown" class="bg-white/90 backdrop-blur-md text-center space-y-3 px-6 py-0 md:hidden">
+      <a href="/index.html" class="block text-green-700 hover:text-green-500 py-2">Home</a>
+      <a href="/about/index.html" class="block text-green-700 hover:text-green-500 py-2">About</a>
+      <a href="/doctors/index.html" class="block text-green-700 hover:text-green-500 py-2">Doctors</a>
+      <a href="/contact/index.html" class="block text-green-700 hover:text-green-500 py-2">Contact</a>
+      <a href="/login/index.html" class="block text-green-700 font-semibold hover:text-green-500 py-2">Login</a>
+      <a href="/signup/index.html" class="block bg-green-500 text-white py-2 rounded-full hover:bg-green-600">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 text-center px-6">
+    <h1 class="text-5xl font-bold text-green-700 mb-4">Your Health, Our Priority 💚</h1>
+    <p class="text-gray-600 max-w-2xl mx-auto text-lg mb-8">
+      Welcome to HealthCare+ — where expert doctors, advanced technology, and compassionate care come together for your well-being.
+    </p>
+    <a href="/doctors/index.html" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-md transition">
+      Meet Our Doctors
+    </a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">🏥 24/7 Emergency</h3>
+      <p class="text-gray-600">Our emergency department is always open to provide immediate care for any medical emergencies.</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">🩺 General Checkups</h3>
+      <p class="text-gray-600">Get routine health checkups to ensure early detection and prevention of diseases.</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">🧠 Neurology</h3>
+      <p class="text-gray-600">Comprehensive diagnosis and treatment for neurological disorders with expert care.</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">🦷 Dental Care</h3>
+      <p class="text-gray-600">Keep your smile bright and healthy with our advanced dental treatments.</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">👶 Pediatrics</h3>
+      <p class="text-gray-600">Specialized medical care for infants, children, and adolescents.</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">❤️ Cardiology</h3>
+      <p class="text-gray-600">Expert cardiologists providing comprehensive heart care and consultation.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-6 text-center">
+    <p>© 2025 HealthyCare Hospital — All Rights Reserved</p>
+  </footer>
+
+  <!-- JS for Dropdown Toggle -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileDropdown = document.getElementById("mobileDropdown");
+
+    menuBtn.addEventListener("click", () => {
+      mobileDropdown.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

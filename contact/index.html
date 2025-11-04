@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | HealthyCare Hospital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-white min-h-screen text-gray-800 font-[Poppins]">
+
+  <!-- Header -->
+  <header class="backdrop-blur-md bg-white/30 shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-semibold text-green-600">🏥 HealthCare+</a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="menu-btn" class="lg:hidden text-green-700 text-3xl focus:outline-none">
+        ☰
+      </button>
+
+      <!-- Navigation Links -->
+      <nav
+        id="menu"
+        class="hidden lg:flex flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent border-t border-green-100 lg:border-none shadow-md lg:shadow-none lg:space-x-6 text-green-700 text-center"
+      >
+        <a href="../index.html" class="block px-4 py-2 hover:text-green-500 transition">Home</a>
+        <a href="/about/index.html" class="block px-4 py-2 hover:text-green-500 transition">About</a>
+        <a href="/doctors/index.html" class="block px-4 py-2 hover:text-green-500 transition">Doctors</a>
+        <a href="/contact/index.html" class="block px-4 py-2 hover:text-green-500 transition">Contact</a>
+        <a href="/login/index.html" class="block px-4 py-2 hover:text-green-500 transition font-semibold">Login</a>
+        <a
+          href="/signup/index.html"
+          class="block px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full mx-auto lg:mx-0 transition"
+        >Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="pt-28 pb-16 px-6">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold text-green-700 mb-3">Contact Us</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">We’re here to help you. Whether you have questions, feedback, or need to book an appointment, get in touch with us anytime.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+      <!-- Contact Form -->
+      <form class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-8 border border-green-100 space-y-5">
+        <div>
+          <label class="block text-left text-sm font-medium text-green-700 mb-1">Full Name</label>
+          <input type="text" placeholder="Enter your full name" class="w-full border border-green-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400 transition" required>
+        </div>
+
+        <div>
+          <label class="block text-left text-sm font-medium text-green-700 mb-1">Email Address</label>
+          <input type="email" placeholder="Enter your email" class="w-full border border-green-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400 transition" required>
+        </div>
+
+        <div>
+          <label class="block text-left text-sm font-medium text-green-700 mb-1">Message</label>
+          <textarea rows="5" placeholder="Write your message..." class="w-full border border-green-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400 transition" required></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-green-500 text-white py-3 rounded-xl hover:bg-green-600 transition-all duration-200 shadow-md">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="flex flex-col justify-center bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-8 border border-green-100 space-y-6">
+        <h3 class="text-2xl font-semibold text-green-700 mb-2">Get in Touch</h3>
+        <p class="text-gray-600">You can reach out to us through the following ways or visit our hospital for any medical assistance.</p>
+
+        <div class="space-y-3">
+          <div>
+            <h4 class="font-semibold text-green-700">📍 Address</h4>
+            <p class="text-gray-600">HealthyCare Hospital, Main Boulevard, Karachi, Pakistan</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-green-700">📞 Phone</h4>
+            <p class="text-gray-600">+92 300 1234567</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-green-700">📧 Email</h4>
+            <p class="text-gray-600">contact@healthycarehospital.com</p>
+          </div>
+        </div>
+
+        <div class="pt-4 flex gap-4">
+          <a href="#" class="bg-green-500 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-green-600 transition shadow-md">💬</a>
+          <a href="#" class="bg-green-500 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-green-600 transition shadow-md">📘</a>
+          <a href="#" class="bg-green-500 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-green-600 transition shadow-md">📷</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-6 text-center">
+    <p>© 2025 HealthyCare Hospital — All Rights Reserved</p>
+  </footer>
+
+  <!-- JS for Toggle Menu -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctors | HealthyCare Hospital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-white min-h-screen text-gray-800 font-[Poppins]">
+
+  <!-- Header -->
+  <header class="backdrop-blur-md bg-white/30 shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-semibold text-green-600">🏥 HealthCare+</a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="menu-btn" class="lg:hidden text-green-700 text-3xl focus:outline-none">
+        ☰
+      </button>
+
+      <!-- Navigation Links -->
+      <nav
+        id="menu"
+        class="hidden lg:flex flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent lg:backdrop-blur-none border-t border-green-100 lg:border-none shadow-md lg:shadow-none lg:space-x-6 text-green-700 text-center"
+      >
+        <a href="../index.html" class="block px-4 py-2 hover:text-green-500 transition">Home</a>
+        <a href="/contact/index.html" class="block px-4 py-2 hover:text-green-500 transition">About</a>
+        <a href="/doctors/index.html" class="block px-4 py-2 hover:text-green-500 transition">Doctors</a>
+        <a href="/contact/index.html" class="block px-4 py-2 hover:text-green-500 transition">Contact</a>
+        <a href="/login/index.html" class="block px-4 py-2 hover:text-green-500 transition font-semibold">Login</a>
+        <a
+          href="/signup/index.html"
+          class="block px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full mx-auto lg:mx-0 transition"
+        >Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-28 pb-12 text-center">
+    <h2 class="text-4xl font-bold text-green-700 mb-3">Our Specialists</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">Meet our team of highly qualified doctors, dedicated to providing expert medical care with compassion and precision.</p>
+  </section>
+
+  <!-- Doctors Grid -->
+  <section class="max-w-7xl mx-auto px-6 pb-20 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+    <!-- Doctor Card -->
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Dr. Ayesha Khan" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Ayesha Khan</h3>
+      <p class="text-gray-600 text-sm mb-2">Cardiologist</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 9:00 AM - 1:00 PM</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Dr. Sameer Ahmed" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Sameer Ahmed</h3>
+      <p class="text-gray-600 text-sm mb-2">Dermatologist</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 11:00 AM - 4:00 PM</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Dr. Hina Malik" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Hina Malik</h3>
+      <p class="text-gray-600 text-sm mb-2">Dentist</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 2:00 PM - 6:00 PM</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Dr. Bilal Noor" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Bilal Noor</h3>
+      <p class="text-gray-600 text-sm mb-2">Orthopedic</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 8:00 AM - 12:00 PM</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Dr. Sara Ali" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Sara Ali</h3>
+      <p class="text-gray-600 text-sm mb-2">Pediatrician</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 10:00 AM - 2:00 PM</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Dr. Farhan Shaikh" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Farhan Shaikh</h3>
+      <p class="text-gray-600 text-sm mb-2">Neurologist</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 3:00 PM - 7:00 PM</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/women/51.jpg" alt="Dr. Nida Rehman" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Nida Rehman</h3>
+      <p class="text-gray-600 text-sm mb-2">Gynecologist</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 9:00 AM - 12:00 PM</p>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-green-100 hover:-translate-y-2 transition-all duration-300 text-center">
+      <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Dr. Adeel Raza" class="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-green-200">
+      <h3 class="text-xl font-semibold text-green-700">Dr. Adeel Raza</h3>
+      <p class="text-gray-600 text-sm mb-2">ENT Specialist</p>
+      <p class="text-gray-500 text-xs mb-4">Available: 1:00 PM - 5:00 PM</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-6 text-center">
+    <p>© 2025 HealthyCare Hospital — All Rights Reserved</p>
+  </footer>
+
+  <!-- JS for Toggle Menu -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
